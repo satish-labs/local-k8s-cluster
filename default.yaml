@@ -22,6 +22,18 @@ images:
 - location: "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64.img"
   arch: "aarch64"
 
+# CPUs: if you see performance issues, try limiting cpus to 1.
+# Default: 4
+cpus: 4
+
+# Memory size
+# Default: "4GiB"
+memory: "4GiB"
+
+# Disk size
+# Default: "100GiB"
+disk: "100GiB"
+
 mounts:
 - location: "~"
 - location: "/tmp/lima"
